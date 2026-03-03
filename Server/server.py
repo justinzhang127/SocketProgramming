@@ -1,7 +1,7 @@
 from socket import *
 import threading
 
-serverName = '127.0.0.1' # local machine for now
+
 
 tcpPort = 12000
 udpPort = 5000
@@ -17,7 +17,7 @@ a response with the client address to establish a tcp connection
 """
 def udp_discovery():
     udpSocket = socket(AF_INET, SOCK_DGRAM)
-    udpSocket.bind(('', udpPort)) #this is for my local machine for now
+    udpSocket.bind(('', udpPort)) 
     print("UDP discovery running...")
 
     while True:
